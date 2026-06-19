@@ -8,28 +8,43 @@
 <style>
   :root {
     --bg: #0a0e1a;
-    --surface: #111827;
-    --surface2: #1a2235;
-    --border: #1e2d45;
-    --accent: #00d4aa;
+
+    --surface: rgba(17, 24, 39, 0.75);
+    --surface2: rgba(26, 34, 53, 0.75);
+    --border: rgba(255, 255, 255, 0.08);
+
+    --accent: #f0a500;
     --accent2: #3b82f6;
+
     --win: #10b981;
     --loss: #ef4444;
     --be: #f59e0b;
+
     --text: #e2e8f0;
     --muted: #64748b;
+
     --gold: #f0a500;
-  }
+}
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
-  body {
-    background: var(--bg);
+ body {
+    background:
+        linear-gradient(
+            rgba(10, 14, 26, 0.82),
+            rgba(10, 14, 26, 0.88)
+        ),
+        url("bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     color: var(--text);
     font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     min-height: 100vh;
-  }
-
+}
   /* ── NAV ── */
   nav {
     background: var(--surface);
